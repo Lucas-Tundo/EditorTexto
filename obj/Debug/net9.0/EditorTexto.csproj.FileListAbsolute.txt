@@ -12,3 +12,4 @@ E:\projetos C#\Editor de textos\EditorTexto\EditorTexto\obj\Debug\net9.0\refint\
 E:\projetos C#\Editor de textos\EditorTexto\EditorTexto\obj\Debug\net9.0\EditorTexto.pdb
 E:\projetos C#\Editor de textos\EditorTexto\EditorTexto\obj\Debug\net9.0\EditorTexto.genruntimeconfig.cache
 E:\projetos C#\Editor de textos\EditorTexto\EditorTexto\obj\Debug\net9.0\ref\EditorTexto.dll
+E:\projetos C#\Editor de textos\EditorTexto\EditorTexto\obj\Debug\net9.0\EditorTexto.sourcelink.json
