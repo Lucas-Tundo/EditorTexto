@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace nomedoprojeto {
     internal class Program {
@@ -51,6 +52,16 @@ namespace nomedoprojeto {
             while (Console.ReadKey().Key != ConsoleKey.Escape);
 
             Console.Write(text);
+        }
+
+        static void Salvar(string text) {
+            Console.Clear();
+            Console.WriteLine("Qual caminho deseja salvar seu arquivo");
+            var path = Console.ReadLine();
+
+            using(var file = new StreamWriter(path)) {
+                file.Write(text);
+            }
         }
     }
 }
