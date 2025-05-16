@@ -37,6 +37,17 @@ namespace nomedoprojeto {
 
         static void Abrir() {
             Console.Clear();
+            Console.WriteLine("Qual caminho deseja abrir?");
+            string path = Console.ReadLine();
+
+            using (var file = new StreamReader(path)) {
+                string text = file.ReadToEnd();
+                Console.WriteLine(text);
+            }
+
+            Console.WriteLine("");
+            Console.ReadLine();
+            Menu();
         }
 
         static void Editar() {
@@ -51,7 +62,7 @@ namespace nomedoprojeto {
             }
             while (Console.ReadKey().Key != ConsoleKey.Escape);
 
-            Console.Write(text);
+            Salvar(text);
         }
 
         static void Salvar(string text) {
@@ -62,6 +73,10 @@ namespace nomedoprojeto {
             using(var file = new StreamWriter(path)) {
                 file.Write(text);
             }
+
+            Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+            Console.ReadLine();
+            Menu();
         }
     }
 }
